@@ -1,0 +1,33 @@
+{
+  "name": "geacun-web",
+  "version": "1.0.0",
+  "description": "Plataforma Web GEACUN - Grupo de Estudio en Acuicultura de la Universidad Nacional de Colombia",
+  "main": "server/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "dev": "node server/index.js",
+    "sync:supabase": "node server/scripts/syncToSupabase.js"
+  },
+  "keywords": [
+    "geacun",
+    "unal",
+    "acuicultura",
+    "universidad-nacional-de-colombia"
+  ],
+  "author": "GEACUN",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.5.0",
+    "uuid": "^14.0.3"
+  }
+}
